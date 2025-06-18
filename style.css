@@ -12,14 +12,21 @@ h1{
 }
 
 .choice {
-    height: 200px;
-    width: 200px;
+    height: 165px;
+    width: 165px;
 }
 
 img {
     height: 150px;
     width: 150px;
-    align-items: center;
-    justify-content: center;
     object-fit: cover;
+    border-radius: 50px;
+}
+
+.choices {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
 }
