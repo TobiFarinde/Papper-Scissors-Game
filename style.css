@@ -30,3 +30,7 @@ img {
     gap: 3rem;
     margin-top: 5rem;
 }
+
+.score-board {
+    text-align: center;
+}
