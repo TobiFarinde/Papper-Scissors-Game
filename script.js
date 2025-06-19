@@ -13,6 +13,14 @@ constDrawGame = () => {
     console.log ("game was draw.");
 }
 
+const showWinner = (userWin) => {
+if(userWin) {
+    console.log("you win!");
+}else {
+    console.log("you lose!");
+}
+}
+
 const playGame = (userChoice) => {
     console.log ("user choice =",  userChoice);
 //Generate computer choice
@@ -26,8 +34,15 @@ if(userChoice === compChoice) {
     let userWin = true;
     if(userChoice === "rock") {
         //Scissors, paper
-        userWin = compChoice === "paper" ? false
+        userWin = compChoice === "paper" ? false : true;
+    }else if (userChoice === "paper") {
+        //rock, scissors
+       userWin = compChoice === "scissors" ? false : true;
+    } else{
+        //rock, paper
+        userWin = compChoice === "rock" ? false : true;
     }
+    showWinner(userWin);
 }
 };
 
