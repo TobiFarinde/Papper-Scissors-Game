@@ -45,3 +45,15 @@ img {
 .score-board {
     text-align: center;
 }
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+#user-score, #cpm-score {
+    font-size: 4rem;
+}
