@@ -14,10 +14,10 @@ constDrawGame = () => {
     msg.innerText = "Game was draw. play again";
 }
 
-const showWinner = (userWin) => {
+const showWinner = (userWin, userChoice, compChoice) => {
 if(userWin) {
     console.log("you win!");
-    msg.innerText = "You Win";
+    msg.innerText = "You Win!" ${userChoice} beats #;
     msg.style.nbackgroundColor = "green";
 }else {
     console.log("you lose!");
@@ -47,7 +47,7 @@ if(userChoice === compChoice) {
         //rock, paper
         userWin = compChoice === "rock" ? false : true;
     }
-    showWinner(userWin);
+    showWinner(userWin, compChoice);
 }
 };
 
