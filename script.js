@@ -5,7 +5,7 @@ const choices = document.querySelectorAll(".choice");
 
 const genCompChoice = () => {
     const options = ["rock", "paper", "scissors"];
-//rock, paper, scissors
+Math.floor(Math.random() * 3);
 }
 
 const playGame = (userChoice) => {
@@ -16,7 +16,6 @@ const playGame = (userChoice) => {
 choices.forEach((choice) => {
     choice.addEventListener("click", () =>{
         const userChoice = choice.getAttribute("id")
-console.log("choice was clicked", choiceId);
 playGame(userChoice);
     });
 });
