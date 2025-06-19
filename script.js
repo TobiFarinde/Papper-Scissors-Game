@@ -3,9 +3,20 @@ let compScore = 0;
 
 const choices = document.querySelectorAll(".choice");
 
+const genCompChoice = () => {
+    const options = ["rock", "paper", "scissors"];
+//rock, paper, scissors
+}
+
+const playGame = (userChoice) => {
+    console.log ("user choice =",  userChoice);
+//Generate computer choice
+};
+
 choices.forEach((choice) => {
     choice.addEventListener("click", () =>{
-        const choiceId = choice.getAttribute(0)
-console.log("choice was clicked");
+        const userChoice = choice.getAttribute("id")
+console.log("choice was clicked", choiceId);
+playGame(userChoice);
     });
 });
