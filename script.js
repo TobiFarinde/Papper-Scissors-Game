@@ -7,6 +7,10 @@ const genCompChoice = () => {
     const options = ["rock", "paper", "scissors"];
 const randIdx = Math.floor(Math.random() * 3);
 return options[randIdx];
+};
+
+constDrawGame = () => {
+    console.log ("game was draw.");
 }
 
 const playGame = (userChoice) => {
@@ -14,6 +18,17 @@ const playGame = (userChoice) => {
 //Generate computer choice
 const compChoice = genCompChoice();
 console.log("comp choice =", userChoice);
+
+if(userChoice === compChoice) {
+    //Draw Game
+    drawGame();
+} else {
+    let userWin = true;
+    if(userChoice === "rock") {
+        //Scissors, paper
+        userWin = compChoice === "paper" ? false
+    }
+}
 };
 
 choices.forEach((choice) => {
